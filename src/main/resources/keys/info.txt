@@ -1,0 +1,8 @@
+#1
+Error InvalidKeyException: invalid key format
+You need to convert your private key to PKCS8 format using following command:
+openssl pkcs8 -topk8 -inform PEM -outform DER -in src/main/resources/keys/private.txt  -nocrypt > pkcs8_key
+
+#2
+Error IOException : algid parse error, not a sequence
+https://www.sneppets.com/java/util/private-key-algid-parse-error-not-a-sequence/
